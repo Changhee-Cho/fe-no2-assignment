@@ -51,5 +51,4 @@ export const PokemonBox = styled.div`
     button:hover {
         background-color: rgb(204, 0, 0);
     }
-
 `;
