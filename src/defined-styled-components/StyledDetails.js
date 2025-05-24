@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 const StyledDetails = styled.div`
     display: flex;
     flex-direction: column;
@@ -31,4 +32,5 @@ const StyledDetails = styled.div`
         border-radius: 5px;
     }
 `;
+
 export default StyledDetails;
