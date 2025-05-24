@@ -31,6 +31,9 @@ const StyledDetails = styled.div`
         color: rgb(255, 255, 255);
         border-radius: 5px;
     }
+    .addDelete:hover {
+        background-color: rgb(204, 0, 0);
+    }
 `;
 
 export default StyledDetails;
