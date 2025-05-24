@@ -1,11 +1,12 @@
 import React from 'react';
-import { usePokemon } from './context/PokemonContext';
+import { useDispatch } from 'react-redux';
 import { PokemonListContainer, PokemonBox } from './defined-styled-components/dex/PokemonList';
 import { Link } from 'react-router-dom';
 import MOCK_DATA from './assets/mock/mock';
+import { addPokemon } from './redux/pokemonSlice';
 
 const PokemonList = () => {
-  const { handleAddPokemon } = usePokemon();
+  const dispatch = useDispatch();
 
   return (
     <PokemonListContainer>
@@ -21,7 +22,7 @@ const PokemonList = () => {
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                handleAddPokemon(item);
+                dispatch(addPokemon(item));
               }}
             >
               추가

@@ -1,12 +1,14 @@
 import React from 'react';
-import { usePokemon } from './context/PokemonContext';
+import { useSelector, useDispatch } from 'react-redux';
 import { MyPokemonContainer, MyPokemonList, MyPokemon } from './defined-styled-components/dex/MyPokemon';
 import { PokemonBox } from './defined-styled-components/dex/PokemonList';
 import pokeball_img from './assets/imgs/dex/pokeball.png';
 import { Link } from 'react-router-dom';
+import { removePokemon } from './redux/pokemonSlice';
 
 const PokemonCard = () => {
-  const { myPokemon, maxSlot, handleRemovePokemon } = usePokemon();
+  const dispatch = useDispatch();
+  const { myPokemon, maxSlot } = useSelector(state => state.pokemon);
 
   return (
     <MyPokemonContainer>
@@ -25,7 +27,7 @@ const PokemonCard = () => {
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                handleRemovePokemon(item);
+                dispatch(removePokemon(item));
               }}
             >
               삭제
