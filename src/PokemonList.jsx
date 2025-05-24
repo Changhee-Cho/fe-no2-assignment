@@ -4,6 +4,7 @@ import { PokemonListContainer, PokemonBox } from './defined-styled-components/de
 import { Link } from 'react-router-dom';
 import MOCK_DATA from './assets/mock/mock';
 import { addPokemon } from './redux/pokemonSlice';
+import { toast } from 'react-toastify';
 
 const PokemonList = () => {
   const dispatch = useDispatch();
@@ -11,11 +12,11 @@ const PokemonList = () => {
 
   const handleAdd = (item) => {
     if (myPokemon.length >= maxSlot) {
-      alert('더 이상 선택할 수 없습니다.');
+      toast.error('더 이상 선택할 수 없습니다.')
       return;
     }
     if (myPokemon.find(p => p.id === item.id)) {
-      alert('이미 선택된 포켓몬입니다.');
+      toast.warning('이미 선택된 포켓몬입니다.');
       return;
     }
     dispatch(addPokemon(item));

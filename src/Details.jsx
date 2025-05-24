@@ -5,6 +5,7 @@ import StyledDetails from './defined-styled-components/StyledDetails';
 import MOCK_DATA from './assets/mock/mock';
 import queryString from 'query-string';
 import { addPokemon, removePokemon } from './redux/pokemonSlice';
+import { toast } from 'react-toastify';
 
 const Details = () => {
   const location = useLocation();
@@ -21,23 +22,21 @@ const Details = () => {
     if (!item) return;
 
     if (myPokemon.length >= maxSlot) {
-      alert('더 이상 선택할 수 없습니다!');
+      toast.error('더 이상 선택할 수 없습니다.')
       return;
     }
     if (isInMyPokemon) {
-      alert('이미 선택한 포켓몬입니다!');
+      toast.warning('이미 선택된 포켓몬입니다.');
       return;
     }
 
     dispatch(addPokemon(item));
-    alert(`나만의 포켓몬에 추가되었습니다!`);
   };
 
   const handleRemove = () => {
     if (!item) return;
 
     dispatch(removePokemon(item));
-    alert(`나만의 포켓몬에서 삭제되었습니다!`);
   };
 
   return (

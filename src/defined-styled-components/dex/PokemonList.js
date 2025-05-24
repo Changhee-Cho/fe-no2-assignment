@@ -39,14 +39,14 @@ export const PokemonBox = styled.div`
         color:rgb(102,102,102);
     }
     button {
-            margin-top: 10px;
-    padding: 5px 10px;
-    font-size: 12px;
-    cursor: pointer;
-    border: none;
-    background-color: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
     }
     button:hover {
         background-color: rgb(204, 0, 0);
