@@ -23,5 +23,12 @@ const StyledDetails = styled.div`
         font-size: 16px;
         cursor: pointer;
     }
+    .addDelete {
+        cursor: pointer;
+        border: none;
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+    }
 `;
 export default StyledDetails;
