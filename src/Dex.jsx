@@ -14,11 +14,11 @@ const Dex = () => {
   // 포켓몬 추가 함수
   const handleAddPokemon = (pokemon) => {
     if (myPokemon.find(p => p?.id === pokemon.id)) {
-      alert('이미 추가된 포켓몬입니다!');
+      alert('이미 선택된 포켓몬입니다.');
       return;
     }
     if (myPokemon.length >= MAX_SLOT) {
-      alert('포켓몬 슬롯이 가득 찼습니다!');
+      alert('더 이상 선택할 수 없습니다.');
       return;
     }
     setMyPokemon([...myPokemon, pokemon]);
