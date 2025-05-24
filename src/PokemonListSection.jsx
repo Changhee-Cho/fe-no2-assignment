@@ -1,8 +1,11 @@
 import React from 'react';
+import { usePokemon } from './context/PokemonContext';
 import { PokemonListContainer, PokemonBox } from './defined-styled-components/dex/PokemonList';
 import { Link } from 'react-router-dom';
 
-const PokemonListSection = ({ pokemonList = [], onAdd }) => {
+const PokemonListSection = ({ pokemonList = [] }) => {
+  const { handleAddPokemon } = usePokemon();
+
   return (
     <PokemonListContainer>
       {pokemonList.map((item) => (
@@ -17,7 +20,7 @@ const PokemonListSection = ({ pokemonList = [], onAdd }) => {
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                onAdd(item);
+                handleAddPokemon(item);
               }}
             >
               추가

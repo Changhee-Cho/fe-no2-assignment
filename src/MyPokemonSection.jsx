@@ -1,10 +1,13 @@
 import React from 'react';
+import { usePokemon } from './context/PokemonContext';
 import { MyPokemonContainer, MyPokemonList, MyPokemon } from './defined-styled-components/dex/MyPokemon';
-import {PokemonBox} from './defined-styled-components/dex/PokemonList'
+import { PokemonBox } from './defined-styled-components/dex/PokemonList';
 import pokeball_img from './assets/imgs/dex/pokeball.png';
 import { Link } from 'react-router-dom';
 
-const MyPokemonSection = ({ myPokemon, maxSlot, onRemove }) => {
+const MyPokemonSection = () => {
+  const { myPokemon, maxSlot, handleRemovePokemon } = usePokemon();
+
   return (
     <MyPokemonContainer>
       <h2>나만의 포켓몬</h2>
@@ -22,7 +25,7 @@ const MyPokemonSection = ({ myPokemon, maxSlot, onRemove }) => {
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                onRemove(item);
+                handleRemovePokemon(item);
               }}
             >
               삭제
