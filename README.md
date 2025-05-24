@@ -1,12 +1,34 @@
-# React + Vite
+# FE 2차 과제 : 나만의 포켓몬 도감 만들기
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 카카오테크캠퍼스 3기 FE 2차 과제 – 강원대 FE_조창희
 
-Currently, two official plugins are available:
+### 🔗 호스팅 된 웹 페이지
+[무비온 바로가기](https://changhee-cho.github.io/fe-no1-assignment/) // 작성 중
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📁 제출 항목
+- [트러블슈팅 학습일지 (Notion)](https://www.notion.so/teamsparta/2-TIL-1fd2dc3ef51480359c50d59c835ab280?pvs=4) // 작성 중
+- [작성 코드 (GitHub)](https://github.com/Changhee-Cho/fe-no2-assignment/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ 과제 수행 사항 자가 점검표
+
+#### 필수 기능 가이드
+- [x] Git 브랜치 전략 사용 
+- [x] 페이지 라우팅 구현
+- [x] 도감 페이지 구성
+- [x] 디테일 페이지 구현
+- [x] 알림 기능 구현 ->도전 기능 가이드 4번과 연계
+- [x] styled-components로 스타일링 설정
+
+#### 도전 기능 가이드
+- [x] Redux Toolkit으로 리팩터링하기(중요도 : ⭐️⭐️ / 난이도 : ⭐️⭐️⭐️)  
+- [x] 디테일 페이지에 '추가' 버튼 추가하기(중요도 : ⭐️⭐️⭐️ / 난이도 : ⭐️⭐️)
+- [x] 리스트 페이지의 데이터를 유지시키기 (경우에 따라 2번에서 처리가 될 수도 있습니다.)(중요도 : ⭐️⭐️ / 난이도 : ⭐️)
+- [x] UI 라이브러리 활용하기(중요도 : ⭐️⭐️ / 난이도 : ⭐️⭐️ )
+
+---
+
+### 📌 비고
+
+- 2025.05.25 과제 제출 완료
