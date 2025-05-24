@@ -5,7 +5,7 @@ import { PokemonBox } from './defined-styled-components/dex/PokemonList';
 import pokeball_img from './assets/imgs/dex/pokeball.png';
 import { Link } from 'react-router-dom';
 
-const MyPokemonSection = () => {
+const PokemonCard = () => {
   const { myPokemon, maxSlot, handleRemovePokemon } = usePokemon();
 
   return (
@@ -42,4 +42,4 @@ const MyPokemonSection = () => {
   );
 };
 
-export default MyPokemonSection;
+export default PokemonCard;

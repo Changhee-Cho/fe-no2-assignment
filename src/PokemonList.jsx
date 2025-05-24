@@ -4,7 +4,7 @@ import { PokemonListContainer, PokemonBox } from './defined-styled-components/de
 import { Link } from 'react-router-dom';
 import MOCK_DATA from './assets/mock/mock';
 
-const PokemonListSection = () => {
+const PokemonList = () => {
   const { handleAddPokemon } = usePokemon();
 
   return (
@@ -33,4 +33,4 @@ const PokemonListSection = () => {
   );
 };
 
-export default PokemonListSection;
+export default PokemonList;
