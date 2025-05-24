@@ -3,10 +3,10 @@
 ## 카카오테크캠퍼스 3기 FE 2차 과제 – 강원대 FE_조창희
 
 ### 🔗 호스팅 된 웹 페이지
-[무비온 바로가기](https://changhee-cho.github.io/fe-no1-assignment/) // 작성 중
+[Vercel 바로가기](https://fe-no2-assignment-six.vercel.app/)
 
 ### 📁 제출 항목
-- [트러블슈팅 학습일지 (Notion)](https://www.notion.so/teamsparta/2-TIL-1fd2dc3ef51480359c50d59c835ab280?pvs=4) // 작성 중
+- [트러블슈팅 학습일지 (Notion)](https://www.notion.so/teamsparta/2-TIL-1fd2dc3ef51480359c50d59c835ab280?pvs=4)
 - [작성 코드 (GitHub)](https://github.com/Changhee-Cho/fe-no2-assignment/)
 
 ---
