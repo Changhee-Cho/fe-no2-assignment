@@ -1,5 +1,6 @@
 import React from 'react';
 import { MyPokemonContainer, MyPokemonList, MyPokemon } from './defined-styled-components/dex/MyPokemon';
+import {PokemonBox} from './defined-styled-components/dex/PokemonList'
 import pokeball_img from './assets/imgs/dex/pokeball.png';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ const MyPokemonSection = ({ myPokemon, maxSlot, onRemove }) => {
       <h2>나만의 포켓몬</h2>
       <MyPokemonList>
         {myPokemon.map((item, index) => (
-          <MyPokemon key={index}>
+          <PokemonBox key={index}>
             <Link to={`/pokemon-detail?id=${item.id}`}>
               <img src={item.img_url} alt={item.korean_name} />
               <div>
@@ -26,7 +27,7 @@ const MyPokemonSection = ({ myPokemon, maxSlot, onRemove }) => {
             >
               삭제
             </button>
-          </MyPokemon>
+          </PokemonBox>
         ))}
         {[...Array(maxSlot - myPokemon.length)].map((_, index) => (
           <MyPokemon key={`empty-${index}`}>
