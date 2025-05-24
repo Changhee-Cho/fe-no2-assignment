@@ -6,12 +6,11 @@ import Details from '../Details'
 
 const Router = () => {
   return (
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/dex" element={<Dashboard/>}/>
-        <Route path="/pokemon-detail" element={<Details/>}/>
-      </Routes>
-
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/dex" element={<Dashboard />} />
+      <Route path="/pokemon-detail" element={<Details />} />
+    </Routes>
   )
 }
 

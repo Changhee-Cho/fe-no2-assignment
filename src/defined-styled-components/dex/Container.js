@@ -7,4 +7,5 @@ const Container = styled.div`
   flex-direction: column;
   box-sizing: border-box;
 `;
+
 export default Container;
