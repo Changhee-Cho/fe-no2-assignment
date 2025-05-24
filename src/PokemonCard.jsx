@@ -15,24 +15,24 @@ const PokemonCard = () => {
       <h2>나만의 포켓몬</h2>
       <MyPokemonList>
         {myPokemon.map((item, index) => (
-          <PokemonBox key={index}>
-            <Link to={`/pokemon-detail?id=${item.id}`}>
+          <Link to={`/pokemon-detail?id=${item.id}`}>
+            <PokemonBox key={index}>
               <img src={item.img_url} alt={item.korean_name} />
               <div>
                 <p className="korName">{item.korean_name}</p>
                 <p className="idNumber">No. {String(item.id).padStart(3, '0')}</p>
               </div>
-            </Link>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                dispatch(removePokemon(item));
-              }}
-            >
-              삭제
-            </button>
-          </PokemonBox>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  dispatch(removePokemon(item));
+                }}
+              >
+                삭제
+              </button>
+            </PokemonBox>
+          </Link>
         ))}
         {[...Array(maxSlot - myPokemon.length)].map((_, index) => (
           <MyPokemon key={`empty-${index}`}>
